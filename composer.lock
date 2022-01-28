@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "354d09a372dc522549818e5d265d6c1c",
+    "content-hash": "f9eb0f12f42278f3289024f999a55452",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -180,11 +180,18 @@
             "version": "dev-main",
             "source": {
                 "type": "git",
-                "url": "git@github.com:codeat3/pushpa-samjhe-kya-memes.git",
+                "url": "https://github.com/codeat3/pushpa-samjhe-kya-memes.git",
                 "reference": "ee2e70433d49622f3be74302b1bbe9d5046c4716"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/codeat3/pushpa-samjhe-kya-memes/zipball/ee2e70433d49622f3be74302b1bbe9d5046c4716",
+                "reference": "ee2e70433d49622f3be74302b1bbe9d5046c4716",
+                "shasum": ""
             },
             "default-branch": true,
             "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -194,6 +201,10 @@
                     "email": "swapnilsarwe@gmail.com"
                 }
             ],
+            "support": {
+                "issues": "https://github.com/codeat3/pushpa-samjhe-kya-memes/issues",
+                "source": "https://github.com/codeat3/pushpa-samjhe-kya-memes/tree/main"
+            },
             "time": "2022-01-28T15:24:40+00:00"
         },
         {
