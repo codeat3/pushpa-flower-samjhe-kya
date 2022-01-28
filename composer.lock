@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4351bb674ecbfeac8fc63fb796f5d159",
+    "content-hash": "354d09a372dc522549818e5d265d6c1c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -178,11 +178,12 @@
         {
             "name": "codeat3/pusha-samjhe-kya-memes",
             "version": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "/Users/swapnil.s/code/codeat3/pushpa-samjhe-kya-memes",
-                "reference": "393cf8c1885fbf73c7e286c49bfe361a3cf84895"
+            "source": {
+                "type": "git",
+                "url": "git@github.com:codeat3/pushpa-samjhe-kya-memes.git",
+                "reference": "ee2e70433d49622f3be74302b1bbe9d5046c4716"
             },
+            "default-branch": true,
             "type": "library",
             "license": [
                 "MIT"
@@ -193,9 +194,7 @@
                     "email": "swapnilsarwe@gmail.com"
                 }
             ],
-            "transport-options": {
-                "relative": false
-            }
+            "time": "2022-01-28T15:24:40+00:00"
         },
         {
             "name": "dflydev/dot-access-data",

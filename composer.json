@@ -6,8 +6,8 @@
     "license": "MIT",
     "repositories": [
       {
-        "type": "path",
-        "url": "/Users/swapnil.s/code/codeat3/pushpa-samjhe-kya-memes/"
+        "type": "git",
+        "url": "git@github.com:codeat3/pushpa-samjhe-kya-memes.git"
       }
     ],
     "require": {
