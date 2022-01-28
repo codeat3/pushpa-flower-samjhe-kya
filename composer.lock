@@ -181,12 +181,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/codeat3/pushpa-flower-samjhe-kya-collections.git",
-                "reference": "6d735ceadd8d8cad804a81ffdbf07c1a8b39fa66"
+                "reference": "94ef90cc464b8a6dde4fe6f08ad5304462ce51ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codeat3/pushpa-flower-samjhe-kya-collections/zipball/6d735ceadd8d8cad804a81ffdbf07c1a8b39fa66",
-                "reference": "6d735ceadd8d8cad804a81ffdbf07c1a8b39fa66",
+                "url": "https://api.github.com/repos/codeat3/pushpa-flower-samjhe-kya-collections/zipball/94ef90cc464b8a6dde4fe6f08ad5304462ce51ca",
+                "reference": "94ef90cc464b8a6dde4fe6f08ad5304462ce51ca",
                 "shasum": ""
             },
             "default-branch": true,
@@ -205,7 +205,7 @@
                 "issues": "https://github.com/codeat3/pushpa-flower-samjhe-kya-collections/issues",
                 "source": "https://github.com/codeat3/pushpa-flower-samjhe-kya-collections/tree/main"
             },
-            "time": "2022-01-28T19:11:26+00:00"
+            "time": "2022-01-28T19:21:21+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
