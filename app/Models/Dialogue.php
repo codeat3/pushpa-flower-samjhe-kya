@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Sushi\Sushi;
 use Illuminate\Support\Arr;
+use Illuminate\Support\Str;
 use Symfony\Component\Yaml\Yaml;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -28,7 +29,19 @@ class Dialogue extends Model
 
     public function getRows()
     {
-        return $this->getYamlData();
+        return collect($this->getYamlData())
+            ->map(function ($row) {
+                return [
+                    'dialogue' => Arr::get($row, 'dialogue'),
+                    'slug' => Str::slug(Arr::get($row, 'dialogue')),
+                ];
+            })->toArray();
+    }
+
+    public function getLinkAttribute() {
+        return route('meme', [
+            'slug' => $this->slug,
+        ]);
     }
 
 }
