@@ -10,7 +10,7 @@
 </head>
 
 <body class="antialiased">
-    <div class="relative flex items-top justify-center min-h-screen text-gray-800 bg-gray-100 dark:bg-gray-900 dark:text-gray-100">
+    <div class="relative flex items-top justify-center min-h-screen text-gray-800 bg-gray-100 ">
         <div class="mt-10">
             <h1 class="text-3xl text-center font-bold">
                 Pushpa "Flower Samjhe Kya" Meme Collections
