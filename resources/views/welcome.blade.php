@@ -12,6 +12,9 @@
 <body class="antialiased">
     <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900">
         <div class="mt-10">
+            <h1 class="text-3xl text-center font-bold">
+                Pushpa "Flower Samjhe Kya" Meme Collections
+            </h1>
             <div class="text-gray-800 text-center py-4">
                 <a href="/random" class="h-6 w-6">
                     Load Random Meme
@@ -20,9 +23,17 @@
             @foreach ($dialogues as $dialogue)
                 <img class="object-cover w-full rounded-lg" src="{{ $dialogue->link }}" alt="meme">
             @endforeach
+            @if($type == 'normal')
             <div class="my-3">
                 {{ $dialogues->links() }}
             </div>
+            @else
+            <div class="my-3 text-gray-800 text-center py-4">
+                <a href="/random" class="h-6 w-6">
+                    Load Random Meme
+                </a>
+            </div>
+            @endif
 
             <div class="text-gray-800 text-center py-4">
                 Add more dialogues at <a href="https://github.com/codeat3/pushpa-flower-samjhe-kya-collections/"

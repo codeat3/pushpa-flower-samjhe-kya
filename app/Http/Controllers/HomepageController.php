@@ -8,16 +8,18 @@ use Illuminate\Http\Request;
 class HomepageController extends Controller
 {
     public function index(Request $request) {
-        $dialogues = Dialogue::orderBy('id', 'ASC')->simplePaginate(1);
+        $dialogues = Dialogue::orderBy('id', 'ASC')->paginate(1);
         return view('welcome', [
-            'dialogues' => $dialogues
+            'dialogues' => $dialogues,
+            'type' => 'normal',
         ]);
     }
 
     public function random(Request $request) {
         $dialogues = Dialogue::inRandomOrder()->simplePaginate(1);
         return view('welcome', [
-            'dialogues' => $dialogues
+            'dialogues' => $dialogues,
+            'type' => 'random',
         ]);
     }
 }
