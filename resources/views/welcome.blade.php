@@ -10,12 +10,12 @@
 </head>
 
 <body class="antialiased">
-    <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900">
+    <div class="relative flex items-top justify-center min-h-screen text-gray-800 bg-gray-100 dark:bg-gray-900 dark:text-gray-100">
         <div class="mt-10">
             <h1 class="text-3xl text-center font-bold">
                 Pushpa "Flower Samjhe Kya" Meme Collections
             </h1>
-            <div class="text-gray-800 text-center py-4">
+            <div class="text-center py-4">
                 <a href="/random" class="h-6 w-6">
                     Load Random Meme
                 </a>
@@ -28,7 +28,7 @@
                 {{ $dialogues->links() }}
             </div>
             @else
-            <div class="my-3 text-gray-800 text-center py-4">
+            <div class="my-3 text-center py-4">
                 <a href="/random" class="h-6 w-6">
                     Load Random Meme
                 </a>
