@@ -43,5 +43,19 @@ class Dialogue extends Model
             'slug' => $this->slug,
         ]);
     }
+    public function getImageLinkAttribute() {
+        return route('meme-image', [
+            'slug' => $this->slug,
+        ]);
+    }
 
+    public function next()
+    {
+        return Dialogue::where('id', '>', $this->id)->orderBy('id','asc')->first();
+    }
+
+    public  function previous()
+    {
+        return Dialogue::where('id', '<', $this->id)->orderBy('id','desc')->first();
+    }
 }

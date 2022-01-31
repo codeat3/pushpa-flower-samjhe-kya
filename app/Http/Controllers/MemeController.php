@@ -23,11 +23,12 @@ class MemeController extends Controller
         ];
     }
 
-    private function getFileName($slug)
+    public function meme(Request $request, $slug)
     {
+
     }
 
-    public function __invoke(Request $request, $slug)
+    public function image(Request $request, $slug)
     {
         $randomDialogue = $this->getDialogue($slug);
         $intro = Str::before($randomDialogue->dialogue, '? ') . '?';

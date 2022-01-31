@@ -11,34 +11,24 @@
 
 <body class="antialiased">
     <div class="relative flex items-top justify-center min-h-screen text-gray-800 bg-gray-100 ">
-        <div class="mt-10">
-            <h1 class="text-3xl text-center font-bold">
+        <div class="mt-5">
+            <h1 class="text-3xl text-center font-bold my-2">
                 Pushpa "Flower Samjhe Kya" Meme Collections
             </h1>
-            <div class="text-center py-4">
-                <a href="/random" class="h-6 w-6">
-                    Load Random Meme
-                </a>
-            </div>
-            @foreach ($dialogues as $dialogue)
-                <img class="object-cover w-full rounded-lg" src="{{ $dialogue->link }}" alt="meme">
-            @endforeach
-            @if($type == 'normal')
-            <div class="my-3">
-                {{ $dialogues->links() }}
-            </div>
-            @else
-            <div class="my-3 text-center py-4">
-                <a href="/random" class="h-6 w-6">
-                    Load Random Meme
-                </a>
-            </div>
-            @endif
+
+            <h3 class="text-2xl text-center font-semibold italic my-3">
+                {{ $dialogue->dialogue }}
+            </h3>
+
+            <x-meme-pagination :dialogue="$dialogue" />
+            <img class="object-cover border w-full rounded-lg shadow-xl" src="{{ $dialogue->image_link }}" alt="meme">
+            <x-meme-pagination :dialogue="$dialogue" />
 
             <div class="text-gray-800 text-center py-4">
                 Add more dialogues at <a href="https://github.com/codeat3/pushpa-flower-samjhe-kya-collections/"
                     class="hover:underline font-semibold">GIT Repo</a>
             </div>
+
         </div>
     </div>
 </body>
